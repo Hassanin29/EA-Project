@@ -59,7 +59,7 @@ class MyWindow(Gtk.ApplicationWindow):
         route_edges=[(route[i],route[i+1]) for i in range(len(route)-1)]
         GLib.idle_add(self.show_mpltnx,G,True,False,route_edges,f'Solution (Distance: {distance:.2f})', history, iteration)
 
-    def show_mpltnx(self,graph: nx.DiGraph, pos_available: bool=True, write_weights: bool=True, route: list=None, title: str="", history=tuple(), i:int):
+    def show_mpltnx(self,graph: nx.DiGraph, pos_available: bool=True, write_weights: bool=True, route: list=None, title: str="", history=tuple(), i:int=0):
         self.set_default_size(900,600)
         self.mpltnx = Gtk4MpltNx(graph,pos_available,write_weights,route,title)
         self.set_child(self.mpltnx)
