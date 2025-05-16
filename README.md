@@ -1,3 +1,5 @@
+the documentation https://ea-aco-project.vercel.app/
+
 this project Optimized Waste Collection Routing in Cities Using Ant Colony Optimization we used GA , ACO ,GA-ACO , ACO-GA 
 
 we included a GUI  for each algorithm 
